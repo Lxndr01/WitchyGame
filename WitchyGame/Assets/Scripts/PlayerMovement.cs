@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         Move();
-       // Animate();
+        Animate();
 
     }
 
@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Animate()
     {
-
+        _anim.SetFloat("MovementX", _MovementInput.x);
+        _anim.SetFloat("MovementY", _MovementInput.y);
     }
 }
