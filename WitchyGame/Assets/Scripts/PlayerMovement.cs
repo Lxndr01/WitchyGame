@@ -23,11 +23,11 @@ public class PlayerMovement : MonoBehaviour
         change.y = Input.GetAxisRaw("Vertical");
         if (change != Vector3.zero)
         {
-            MoveCharacter();
+            Move();
         }
     }
 
-    void MoveCharacter()
+    void Move()
     {
         myRigidbody.MovePosition(
                 transform.position + change * speed * Time.deltaTime
