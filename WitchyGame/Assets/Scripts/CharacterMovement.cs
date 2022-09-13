@@ -32,8 +32,6 @@ public class CharacterMovement : MonoBehaviour
         }
 
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
         rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
