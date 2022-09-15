@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour {
     [SerializeField]
     private Tilemap tilemap;    
 
-    // Start is called before the first frame update
+    
     void Start()
     { 
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour {
         SetLimits(minTile, maxTile);
     }
 
-    // Update is called once per frame
+    // After character/player moved, the camera will follow him.
     private void LateUpdate()
     {
     transform.position = new Vector3(Mathf.Clamp(target.position.x, xMin, xMax), Mathf.Clamp(target.position.y, yMin, yMax), -10);
