@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-<<<<<<< HEAD
     public Dialogue dialogueScript;
     private bool playerDetected;
 
@@ -36,17 +35,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             dialogueScript.StartDialogue();
         }
-=======
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
->>>>>>> 1a0c1b99b4b327bfa884496fb8b782958f02af4b
+
     }
 }

@@ -1,10 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-<<<<<<< HEAD
 using System.IO;
 using System;
-=======
->>>>>>> 1a0c1b99b4b327bfa884496fb8b782958f02af4b
 using UnityEngine;
 using TMPro;
 
@@ -15,10 +12,9 @@ public class Dialogue : MonoBehaviour
     public GameObject window;
     //Indicator
     public GameObject indicator;
-<<<<<<< HEAD
+
     public string mapName;
-=======
->>>>>>> 1a0c1b99b4b327bfa884496fb8b782958f02af4b
+
     //Text component
     public TMP_Text dialogueText;
     //Dialogues list
@@ -36,16 +32,13 @@ public class Dialogue : MonoBehaviour
 
     private void Awake()
     {
-<<<<<<< HEAD
-
         FileRead(Application.streamingAssetsPath+"\\Varos.csv");
-=======
->>>>>>> 1a0c1b99b4b327bfa884496fb8b782958f02af4b
+
         ToggleIndicator(false);
         ToggleWindow(false);
     }
 
-<<<<<<< HEAD
+
     private void FileRead(string filePath)
     {
        string m_path = Application.dataPath;
@@ -57,8 +50,7 @@ public class Dialogue : MonoBehaviour
         Debug.Log(""+Application.streamingAssetsPath);
     }
 
-=======
->>>>>>> 1a0c1b99b4b327bfa884496fb8b782958f02af4b
+
     private void ToggleWindow(bool show)
     {
         window.SetActive(show);
@@ -67,11 +59,7 @@ public class Dialogue : MonoBehaviour
     {
         indicator.SetActive(show);
     }
-<<<<<<< HEAD
-   
-=======
 
->>>>>>> 1a0c1b99b4b327bfa884496fb8b782958f02af4b
     //Start Dialogue
     public void StartDialogue()
     {
